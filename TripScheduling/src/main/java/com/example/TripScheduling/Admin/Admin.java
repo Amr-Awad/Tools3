@@ -17,6 +17,7 @@ public class Admin {
             generator = "admin_sequence"
     )
     private Integer id;
+    @Column(unique = true)
     private String username;
     private String password;
 
@@ -39,5 +40,9 @@ public class Admin {
     }
     public String getPassword(){
         return this.password;
+    }
+
+    public void setidd(Integer idd){
+        this.id = idd;
     }
 }
