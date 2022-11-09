@@ -1,6 +1,7 @@
 package com.example.TripScheduling.Admin;
 
-import org.springframework.http.MediaType;
+import com.example.TripScheduling.Station.Station;
+import com.example.TripScheduling.Trip.Trip;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
@@ -12,32 +13,49 @@ public class AdminController {
         this.ser = ser;
     }
 
-    @PostMapping("create")
-    public void signUp(@RequestBody Admin admin)
+    @PostMapping("signup")
+    public Admin signUp(@RequestBody Admin admin)
     {
-        ser.createAdmin(admin);
+        ser.signup(admin);
+        return admin;
     }
 
-    @PutMapping(value = "update/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public void updateAdmin(@RequestBody Admin admin, @PathVariable(value="id") int id)
+    @GetMapping("signin")
+    public Admin signIn(@RequestBody Admin admin)
     {
-        ser.updateAdmin(admin, id);
+        return ser.signin(admin.getUsername(),admin.getPassword());
     }
 
-    @DeleteMapping(value = "delete/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public void deleteAdmin(@PathVariable(value="id") int id)
+    @PostMapping("createtrip")
+    public void createTrip(@RequestBody Trip trip)
     {
-        ser.deleteAdmin(id);
+        ser.createTrip(trip);
     }
 
-    @GetMapping(value = "get/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public Admin getAdmin(@PathVariable(value="id") int id) {
-        return ser.getAdmin(id);
+    @PutMapping("updatetrip/{id}")
+    public void updateTrip(@RequestBody Trip trip, @PathVariable Integer id)
+    {
+        ser.updateTrip(trip,id);
     }
 
-    @GetMapping(value = "getall", produces = MediaType.APPLICATION_JSON_VALUE)
-    public Iterable<Admin> getAllAdmins() {
-        return ser.getAllAdmins();
+    @DeleteMapping("deletetrip/{id}")
+    public void deleteTrip(@PathVariable Integer id)
+    {
+        ser.deleteTrip(id);
     }
+
+    @GetMapping("getalltrips")
+    public Iterable<Trip> getAllTrips()
+    {
+        return ser.getAllTrips();
+    }
+
+    @GetMapping("getallstations")
+    public Iterable<Station> getAllStations()
+    {
+        return ser.getAllStations();
+    }
+
+
 
 }
