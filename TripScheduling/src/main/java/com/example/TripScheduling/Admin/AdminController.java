@@ -1,5 +1,5 @@
 package com.example.TripScheduling.Admin;
-import org.springframework.http.HttpStatus;
+
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
@@ -19,7 +19,7 @@ public class AdminController {
     }
 
     @PutMapping(value = "update/{id}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public void updateAdmin(@RequestBody Admin admin,@PathVariable(value="id") int id)
+    public void updateAdmin(@RequestBody Admin admin, @PathVariable(value="id") int id)
     {
         ser.updateAdmin(admin, id);
     }

@@ -7,7 +7,7 @@ import java.util.Optional;
 
 @Service
 public class AdminService {
-    AdminRepo a;
+    private AdminRepo a;
 
     @Autowired
     public AdminService(AdminRepo a) {
