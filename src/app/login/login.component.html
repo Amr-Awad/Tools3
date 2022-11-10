@@ -3,13 +3,14 @@
     <form>
         <div>
             <label for="username-input" class="form-label">Username</label>
-            <input type="text" class="form-control" id="" name="" placeholder="Username">
+            <input type="text" class="form-control" id="username" name="username" placeholder="Username" #username>
         </div>
         <div>
             <label for="password-input" class="form-label">Password</label>
-            <input type="password" class="form-control" id="" name="" placeholder="Password">
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password" #password>
         </div>
-        <button type="submit" class="btn btn-dark" style="margin: 10px 0;">Login</button>
+        <button (click)="login(username.value,password.value)" class="btn btn-dark" style="margin: 10px 0; margin-right: 10px;">Login</button>
+        <button (click)="signup(username.value,password.value)" class="btn btn-dark" style="margin: 10px 0;">Sign Up</button>
     </form>
-    Do not have an account ? <a routerLink="/signup"><button class="btn btn-dark">Sign Up</button></a>
+    <!-- Do not have an account ? <a routerLink="/signup"><button class="btn btn-dark">Sign Up</button></a> -->
 </div>
