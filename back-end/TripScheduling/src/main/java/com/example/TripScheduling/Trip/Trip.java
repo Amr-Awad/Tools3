@@ -86,19 +86,29 @@ public class Trip {
         this.id = idd;
     }
 
-    public String getFromStationName() {
+
+    public String FromStationn() {
+        while (fromStationName == null) {
+            fromStationName = fromStation.getName();
+        }
         return fromStationName;
     }
-
     public void setFromStationName(String fromStationName) {
         this.fromStationName = fromStationName;
     }
-
-    public String getToStationName() {
+    public String ToStationn() {
+        while (toStationName == null) {
+            toStationName = toStation.getName();
+        }
         return toStationName;
     }
-
     public void setToStationName(String toStationName) {
         this.toStationName = toStationName;
+    }
+    public Station getFromStation() {
+        return fromStation;
+    }
+    public Station getToStation() {
+        return toStation;
     }
 }

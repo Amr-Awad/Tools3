@@ -50,13 +50,13 @@ public class AdminService {
     public void createTrip(Trip trip)
     {
 
-            createStation(trip.getFromStationName(), trip.getToStationName());
+            createStation(trip.FromStationn(), trip.ToStationn());
             t.createTrip(trip);
     }
 
     public void updateTrip(Trip trip, Integer id)
     {
-        createStation(trip.getFromStationName(), trip.getToStationName());
+        createStation(trip.FromStationn(), trip.ToStationn());
         t.updateTrip(trip,id);
     }
 

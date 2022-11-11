@@ -1,6 +1,8 @@
+import { IStation } from "../view-stations/station";
 export interface ITrip{
-    fromStationName: string ;
-    toStationName: string ;
+    id: number;
+    fromStation: IStation ;
+    toStation: IStation ;
     startTime: String ;
     endTime: String ;
 }

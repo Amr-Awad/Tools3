@@ -4,20 +4,20 @@
     </div>
     <div class="card-body">
     <div class = 'table-responsive'>
-        <table class="table table-hover" *ngIf="stations.length" >
-            <thead>
+        <table class="table table-hover cen" *ngIf="stations.length" >
+            <thead >
                 <tr>
-                     <th>Station Name</th>
+                    <th>Station Number</th>
+                    <th>Station Name</th>
                 </tr>
             </thead>
             <tbody>
                 <tr *ngFor="let station of stations">
-                    <td>{{station.name}}</td>
+                    <td  >{{station.id}}</td>
+                    <td >{{station.name}}</td>
                     
                 </tr>
             </tbody>
         </table>
-
     </div>
 </div>
-

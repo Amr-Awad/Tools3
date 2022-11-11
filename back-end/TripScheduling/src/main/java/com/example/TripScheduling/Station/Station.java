@@ -43,4 +43,8 @@ public class Station {
     public void setidd(Integer idd){
         this.id = idd;
     }
+
+    public Integer getId() {
+        return id;
+    }
 }

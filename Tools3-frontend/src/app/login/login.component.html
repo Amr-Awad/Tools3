@@ -24,5 +24,11 @@
             <p></p>
             <a class="navlink" routerLink="viewStations">click here to view all Stations</a>
         </div>
+        <div *ngIf="wrongCredentials">
+            <p>Wrong Credentials!</p>
+        </div>
+        <div *ngIf="duplicateCredentials">
+            <p>The Username Already Exists!</p>
+        </div>
     </form>
 </div>
