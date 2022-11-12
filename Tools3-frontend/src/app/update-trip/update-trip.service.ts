@@ -7,11 +7,12 @@ import { ITrip } from "../viewTrips/trip";
     providedIn: "root"
 })
 
-export class CreateTripService {
+export class UpdateTripService {
     constructor(private http: HttpClient) { }
-    private _url: string = "http://localhost:8080/admin/createtrip";
+    private _url: string = "http://localhost:8080/admin/updatetrip";
 
-    createTrip(trip: ITrip): Observable<ITrip> {
-        return this.http.post<ITrip>(this._url, trip);
+    updateTrip(id: string, trip: ITrip): Observable<ITrip> {
+        const tripUrl = "" + this._url + "/" + id;
+        return this.http.put<ITrip>(tripUrl, trip);
     }
 }

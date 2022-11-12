@@ -1,4 +1,4 @@
 export interface IStation {
-    // id: number ;     
-    name: string ;
+    id: number;
+    name: string;
 }

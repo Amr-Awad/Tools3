@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { ViewStationsComponent } from './view-stations/view-stations.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CreateTripComponent } from './create-trip/create-trip.component';
+import { UpdateTripComponent } from './update-trip/update-trip.component';
+import { DeleteTripComponent } from './delete-trip/delete-trip.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { CreateTripComponent } from './create-trip/create-trip.component';
     ViewTripsComponent,
     ViewStationsComponent,
     NavbarComponent,
-    CreateTripComponent
+    CreateTripComponent,
+    UpdateTripComponent,
+    DeleteTripComponent
   ],
   imports: [
     BrowserModule,

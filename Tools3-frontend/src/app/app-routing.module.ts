@@ -5,11 +5,16 @@ import { LoginComponent } from './login/login.component';
 import { ViewTripsComponent } from './viewTrips/viewTrips.components';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CreateTripComponent } from './create-trip/create-trip.component';
+import { UpdateTripComponent } from './update-trip/update-trip.component';
+import { DeleteTripComponent } from './delete-trip/delete-trip.component';
 
 const routes: Routes = [
-  {path:"viewStations",component:ViewStationsComponent},
-  {path:"viewTrips",component:ViewTripsComponent},
-  {path:"",component:CreateTripComponent}
+  { path: "viewStations", component: ViewStationsComponent },
+  { path: "viewTrips", component: ViewTripsComponent },
+  { path: "createTrip", component: CreateTripComponent },
+  { path: "updateTrip", component: UpdateTripComponent },
+  { path: "deleteTrip", component: DeleteTripComponent },
+  { path: "", component: LoginComponent }
 ];
 
 @NgModule({

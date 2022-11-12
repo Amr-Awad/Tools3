@@ -1,0 +1,12 @@
+<app-navbar></app-navbar>
+<div class="container col-md-6">
+    <h1>Delete A Trip</h1>
+    <form>
+        <div>
+            <label class="form-label">Trip id:</label>
+            <input type="text" class="form-control" #id>
+        </div>
+        <button (click)="delete(id.value)" class="btn btn-dark"
+            style="margin: 10px 0; margin-right: 10px;">Delete</button>
+    </form>
+</div>

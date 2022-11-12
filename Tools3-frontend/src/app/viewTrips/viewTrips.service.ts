@@ -4,21 +4,20 @@ import { HttpClient } from '@angular/common/http';
 import { catchError, Observable, tap, throwError } from 'rxjs';
 
 @Injectable(
-{
-    providedIn: "root"
-})
-export class ViewTripsService
-{
-    constructor(private http:HttpClient){}
+    {
+        providedIn: "root"
+    })
+export class ViewTripsService {
+    constructor(private http: HttpClient) { }
     private _url: string = "http://localhost:8080/admin/getalltrips";
 
-    getTrips():Observable<ITrip[]>{
+    getTrips(): Observable<ITrip[]> {
         return this.http.get<ITrip[]>(this._url).pipe(
             tap(data => console.log('All: ' + JSON.stringify(data))),
             catchError(this.handleError)
         );
     }
-    handleError(err: any){
+    handleError(err: any) {
         let errorMessage = '';
         if (err.error instanceof ErrorEvent) {
             errorMessage = `An error occurred: ${err.error.message}`;
@@ -27,7 +26,7 @@ export class ViewTripsService
             errorMessage = `Server returned code: ${err.status}, error message is: ${err.message}`;
         }
         console.error(errorMessage);
-        return throwError(()=>errorMessage);
+        return throwError(() => errorMessage);
     }
-    
+
 }

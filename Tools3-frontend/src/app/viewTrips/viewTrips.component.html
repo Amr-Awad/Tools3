@@ -8,7 +8,7 @@
         <table class="table table-hover" *ngIf="trips.length" >
             <thead class="cen">
                 <tr>
-                    <th>Trip Number</th>
+                    <th>Trip ID</th>
                     <th>From Staion</th>
                     <th>To Staion</th>
                     <th>Start Time</th>
@@ -17,7 +17,7 @@
             </thead>
             <tbody>
                 <tr  *ngFor="let trip of trips" >
-                    <!-- <td>{{trip.id}}</td> -->
+                    <td>{{trip.id}}</td>
                     <td>{{trip.fromStation.name}}</td>
                     <td>{{trip.toStation.name}}</td>
                     <td>{{trip.startTime}}</td>

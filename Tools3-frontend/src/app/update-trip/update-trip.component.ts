@@ -1,14 +1,15 @@
-import { Component } from '@angular/core';
-import { ITrip } from '../viewTrips/trip';
+import { Component, OnInit } from '@angular/core';
 import { IStation } from '../view-stations/station';
-import { CreateTripService } from './create-trip.service';
+import { ITrip } from '../viewTrips/trip';
+import { UpdateTripService } from './update-trip.service';
 
 @Component({
-  selector: 'app-create-trip',
-  templateUrl: './create-trip.component.html',
-  styleUrls: ['./create-trip.component.css']
+  selector: 'app-update-trip',
+  templateUrl: './update-trip.component.html',
+  styleUrls: ['./update-trip.component.css']
 })
-export class CreateTripComponent {
+export class UpdateTripComponent {
+
   trip: ITrip = {
     id: 0,
     fromStation: { id: 0, name: "" },
@@ -23,15 +24,16 @@ export class CreateTripComponent {
     id: 0, name: ""
   };
 
-  constructor(private service: CreateTripService) { }
-  create(from: string, to: string, start: string, end: string) {
+  constructor(private service: UpdateTripService) { }
+  update(id: string, from: string, to: string, start: string, end: string) {
     this.from_station.name = from;
     this.to_station.name = to;
     this.trip.fromStation = this.from_station;
     this.trip.toStation = this.to_station;
     this.trip.startTime = start;
     this.trip.endTime = end;
-    this.service.createTrip(this.trip).subscribe((Response: any) => { console.log(Response); }
+    this.service.updateTrip(id, this.trip).subscribe((Response: any) => { console.log(Response); }
     )
   }
+
 }

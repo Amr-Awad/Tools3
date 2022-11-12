@@ -9,9 +9,11 @@
             <label for="password-input" class="form-label">Password</label>
             <input type="password" class="form-control" id="password" name="password" placeholder="Password" #password>
         </div>
-        <button (click)="login(username.value,password.value)" class="btn btn-dark" style="margin: 10px 0; margin-right: 10px;">Login</button>
-        
-        <button (click)="signup(username.value,password.value)" class="btn btn-dark" style="margin: 10px 0;">SignUp</button>
+        <button (click)="login(username.value,password.value)" class="btn btn-dark"
+            style="margin: 10px 0; margin-right: 10px;">Login</button>
+
+        <button (click)="signup(username.value,password.value)" class="btn btn-dark"
+            style="margin: 10px 0;">SignUp</button>
         <div *ngIf="signedUp">
             <p>You are now signed up!</p>
             <a class="navlink" routerLink="viewTrips">click here to view all trips</a>
