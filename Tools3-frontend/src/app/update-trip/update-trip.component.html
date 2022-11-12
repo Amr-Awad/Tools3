@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+<div class="container col-md-6">
+    <h1>Update A Trip</h1>
+    <form>
+        <div>
+            <label class="form-label">Trip id:</label>
+            <input type="text" class="form-control" #id>
+        </div>
+        <div>
+            <label class="form-label">From Station:</label>
+            <input type="text" class="form-control" #from>
+        </div>
+        <div>
+            <label class="form-label">To Station:</label>
+            <input type="text" class="form-control" #to>
+        </div>
+        <div>
+            <label class="form-label">Start Time:</label>
+            <input type="text" class="form-control" #start>
+        </div>
+        <div>
+            <label class="form-label">End Time:</label>
+            <input type="text" class="form-control" #end>
+        </div>
+        <button (click)="update(id.value,from.value,to.value,start.value,end.value)" class="btn btn-dark"
+            style="margin: 10px 0; margin-right: 10px;">Update</button>
+        
+        <div *ngIf="tripUpdated"> 
+            <p> Trip Updated Successfully! </p>
+        </div>
+    </form>
+</div>

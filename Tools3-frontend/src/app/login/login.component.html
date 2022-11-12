@@ -1,0 +1,36 @@
+<div class="container col-md-6">
+    <h1>Welcome To TripScheduling</h1>
+    <form>
+        <div>
+            <label for="username-input" class="form-label">Username</label>
+            <input type="text" class="form-control" id="username" name="username" placeholder="Username" #username>
+        </div>
+        <div>
+            <label for="password-input" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Password" #password>
+        </div>
+        <button (click)="login(username.value,password.value)" class="btn btn-dark"
+            style="margin: 10px 0; margin-right: 10px;">Login</button>
+
+        <button (click)="signup(username.value,password.value)" class="btn btn-dark"
+            style="margin: 10px 0;">SignUp</button>
+        <div *ngIf="signedUp">
+            <p>You are now signed up!</p>
+            <a class="navlink" routerLink="viewTrips">click here to view all trips</a>
+            <p></p>
+            <a class="navlink" routerLink="viewStations">click here to view all Stations</a>
+        </div>
+        <div *ngIf="signedIn">
+            <p>You are now signed in!</p>
+            <a class="navlink" routerLink="viewTrips">click here to view all trips</a>
+            <p></p>
+            <a class="navlink" routerLink="viewStations">click here to view all Stations</a>
+        </div>
+        <div *ngIf="wrongCredentials">
+            <p>Wrong Credentials!</p>
+        </div>
+        <div *ngIf="duplicateCredentials">
+            <p>The Username Already Exists!</p>
+        </div>
+    </form>
+</div>
