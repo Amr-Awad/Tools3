@@ -20,5 +20,8 @@
         </div>
         <button (click)="create(from.value,to.value,start.value,end.value)" class="btn btn-dark"
             style="margin: 10px 0; margin-right: 10px;">Create</button>
+        <div *ngIf="tripCreated"> 
+            <p> Trip Created Successfully! </p>
+        </div>
     </form>
 </div>

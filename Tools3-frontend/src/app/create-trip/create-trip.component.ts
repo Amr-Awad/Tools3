@@ -22,6 +22,7 @@ export class CreateTripComponent {
   to_station: IStation = {
     id: 0, name: ""
   };
+  tripCreated: boolean = false;
 
   constructor(private service: CreateTripService) { }
   create(from: string, to: string, start: string, end: string) {
@@ -31,7 +32,9 @@ export class CreateTripComponent {
     this.trip.toStation = this.to_station;
     this.trip.startTime = start;
     this.trip.endTime = end;
-    this.service.createTrip(this.trip).subscribe((Response: any) => { console.log(Response); }
+    this.service.createTrip(this.trip).subscribe((Response: any) => { console.log(Response); 
+    this.tripCreated = true;
+    setTimeout(() => {  this.tripCreated = false; }, 3000);    }
     )
   }
 }

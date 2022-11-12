@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98dfac1f-50b5-4cfc-ab24-e401f3f8180c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TripScheduling/src/main/java/com/example/TripScheduling/Admin/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TripScheduling/src/main/java/com/example/TripScheduling/Admin/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TripScheduling/src/main/java/com/example/TripScheduling/Station/Station.java" beforeDir="false" afterPath="$PROJECT_DIR$/TripScheduling/src/main/java/com/example/TripScheduling/Station/Station.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TripScheduling/src/main/java/com/example/TripScheduling/Trip/Trip.java" beforeDir="false" afterPath="$PROJECT_DIR$/TripScheduling/src/main/java/com/example/TripScheduling/Trip/Trip.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TripScheduling/src/main/java/com/example/TripScheduling/Trip/TripService.java" beforeDir="false" afterPath="$PROJECT_DIR$/TripScheduling/src/main/java/com/example/TripScheduling/Trip/TripService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripScheduling/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TripScheduling/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,7 +26,7 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="com.haulmont.jpb.jpaInspector" value="true" />
+        <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
         <entry key="com.haulmont.jpb.jpaStructure" value="true" />
       </map>
@@ -47,6 +43,9 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunManager" selected="Application.TripSchedulingApplication">
     <configuration name="TripSchedulingApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -84,10 +83,14 @@
       <option name="presentableId" value="Default" />
       <updated>1668117538594</updated>
       <workItem from="1668208336903" duration="662000" />
+      <workItem from="1668270417866" duration="4416000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

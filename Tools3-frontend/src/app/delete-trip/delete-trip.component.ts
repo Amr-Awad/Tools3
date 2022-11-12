@@ -7,9 +7,12 @@ import { DeleteTripService } from './delete-trip.service';
   styleUrls: ['./delete-trip.component.css']
 })
 export class DeleteTripComponent {
+  tripDeleted: boolean = false;
   constructor(private service: DeleteTripService) { }
   delete(id: string) {
-    this.service.deleteTrip(id).subscribe((Response: any) => { console.log(Response); }
+    this.service.deleteTrip(id).subscribe((Response: any) => { console.log(Response); 
+      this.tripDeleted = true;
+      setTimeout(() => {  this.tripDeleted = false; }, 3000);    }
     )
   }
 }

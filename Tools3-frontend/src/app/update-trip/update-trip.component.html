@@ -24,5 +24,9 @@
         </div>
         <button (click)="update(id.value,from.value,to.value,start.value,end.value)" class="btn btn-dark"
             style="margin: 10px 0; margin-right: 10px;">Update</button>
+        
+        <div *ngIf="tripUpdated"> 
+            <p> Trip Deleted Successfully! </p>
+        </div>
     </form>
 </div>

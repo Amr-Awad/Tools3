@@ -8,5 +8,8 @@
         </div>
         <button (click)="delete(id.value)" class="btn btn-dark"
             style="margin: 10px 0; margin-right: 10px;">Delete</button>
+            <div *ngIf="tripDeleted"> 
+                <p> Trip Deleted Successfully! </p>
+            </div>
     </form>
 </div>

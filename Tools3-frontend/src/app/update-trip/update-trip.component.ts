@@ -8,7 +8,7 @@ import { UpdateTripService } from './update-trip.service';
   templateUrl: './update-trip.component.html',
   styleUrls: ['./update-trip.component.css']
 })
-export class UpdateTripComponent {
+export class UpdateTripComponent { 
 
   trip: ITrip = {
     id: 0,
@@ -23,6 +23,7 @@ export class UpdateTripComponent {
   to_station: IStation = {
     id: 0, name: ""
   };
+  tripUpdated: boolean = false;
 
   constructor(private service: UpdateTripService) { }
   update(id: string, from: string, to: string, start: string, end: string) {
@@ -32,7 +33,9 @@ export class UpdateTripComponent {
     this.trip.toStation = this.to_station;
     this.trip.startTime = start;
     this.trip.endTime = end;
-    this.service.updateTrip(id, this.trip).subscribe((Response: any) => { console.log(Response); }
+    this.service.updateTrip(id, this.trip).subscribe((Response: any) => { console.log(Response); 
+      this.tripUpdated = true;
+      setTimeout(() => {  this.tripUpdated = false; }, 3000);}
     )
   }
 
