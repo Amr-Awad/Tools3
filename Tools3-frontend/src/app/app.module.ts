@@ -8,13 +8,17 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ViewStationsComponent } from './view-stations/view-stations.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { CreateTripComponent } from './create-trip/create-trip.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ViewTripsComponent,
-    ViewStationsComponent
+    ViewStationsComponent,
+    NavbarComponent,
+    CreateTripComponent
   ],
   imports: [
     BrowserModule,

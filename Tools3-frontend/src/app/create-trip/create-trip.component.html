@@ -1,0 +1,22 @@
+<div class="container col-md-6">
+    <h1>Create A Trip</h1>
+    <form>
+        <div>
+            <label class="form-label">From Station:</label>
+            <input type="text" class="form-control" #from>
+        </div>
+        <div>
+            <label class="form-label">To Station:</label>
+            <input type="text" class="form-control" #to>
+        </div>
+        <div>
+            <label class="form-label">Start Time:</label>
+            <input type="text" class="form-control" #start>
+        </div>
+        <div>
+            <label class="form-label">End Time:</label>
+            <input type="text" class="form-control" #end>
+        </div>
+        <button (click)="create(from.value,to.value,start.value,end.value)" class="btn btn-dark" style="margin: 10px 0; margin-right: 10px;">Create</button>        
+    </form>
+</div>
