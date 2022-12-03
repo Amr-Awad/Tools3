@@ -3,7 +3,11 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  //@ts-ignore
+  backendport: window["env"]["backendport"] || "default",
+  //@ts-ignore
+  debug: window["env"]["debug"] || false
 };
 
 /*

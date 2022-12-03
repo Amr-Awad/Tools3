@@ -1,6 +1,7 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
+import { environment } from "src/environments/environment";
 import { ITrip } from "../viewTrips/trip";
 
 @Injectable({
@@ -9,7 +10,7 @@ import { ITrip } from "../viewTrips/trip";
 
 export class UpdateTripService {
     constructor(private http: HttpClient) { }
-    private _url: string = "http://localhost:8080/admin/updatetrip";
+    private _url: string = "http://localhost:"+environment.backendport+"/admin/updatetrip";
 
     updateTrip(id: string, trip: ITrip): Observable<ITrip> {
         const tripUrl = "" + this._url + "/" + id;
