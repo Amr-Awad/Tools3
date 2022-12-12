@@ -5,7 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98dfac1f-50b5-4cfc-ab24-e401f3f8180c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tools3-frontend/src/app/create-trip/create-trip.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Tools3-frontend/src/app/create-trip/create-trip.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tools3-frontend/src/app/delete-trip/delete-trip.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Tools3-frontend/src/app/delete-trip/delete-trip.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tools3-frontend/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Tools3-frontend/src/app/login/login.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tools3-frontend/src/app/update-trip/update-trip.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Tools3-frontend/src/app/update-trip/update-trip.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tools3-frontend/src/app/view-stations/view-staion.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Tools3-frontend/src/app/view-stations/view-staion.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Tools3-frontend/src/app/viewTrips/viewTrips.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Tools3-frontend/src/app/viewTrips/viewTrips.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripScheduling/database/Dockerfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/TripScheduling/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TripScheduling/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -13,8 +25,23 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="JpbToolWindowState">
     <option name="myId2FirstActivated">
@@ -28,7 +55,7 @@
       <map>
         <entry key="com.haulmont.jpb.jpaInspector" value="false" />
         <entry key="com.haulmont.jpb.jpaPalette" value="false" />
-        <entry key="com.haulmont.jpb.jpaStructure" value="true" />
+        <entry key="com.haulmont.jpb.jpaStructure" value="false" />
       </map>
     </option>
   </component>
@@ -42,13 +69,31 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.pathVariables" />
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+      <command value="mvn install" />
+    </option>
   </component>
   <component name="RunManager" selected="Application.TripSchedulingApplication">
     <configuration name="TripSchedulingApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <envs>
+        <env name="VARIP" value="localhost" />
+        <env name="VARPORT" value="3306" />
+      </envs>
       <option name="MAIN_CLASS_NAME" value="com.example.TripScheduling.TripSchedulingApplication" />
       <module name="TripScheduling" />
       <extension name="coverage">
@@ -68,6 +113,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="Application.TripSchedulingApplication" />
+      <item itemvalue="Spring Boot.TripSchedulingApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.TripSchedulingApplication" />
@@ -83,7 +132,13 @@
       <option name="presentableId" value="Default" />
       <updated>1668117538594</updated>
       <workItem from="1668208336903" duration="662000" />
-      <workItem from="1668270417866" duration="4416000" />
+      <workItem from="1668270417866" duration="7163000" />
+      <workItem from="1668597806384" duration="1052000" />
+      <workItem from="1669929545955" duration="1071000" />
+      <workItem from="1670006474043" duration="3836000" />
+      <workItem from="1670064149841" duration="1351000" />
+      <workItem from="1670067269308" duration="7158000" />
+      <workItem from="1670079007524" duration="194000" />
     </task>
     <servers />
   </component>
@@ -91,6 +146,15 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

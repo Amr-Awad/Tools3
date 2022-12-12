@@ -1,3 +1,7 @@
 export const environment = {
-  production: true
+  production: true,
+  //@ts-ignore
+  backendport: window["env"]["backendport"] || "default",
+  //@ts-ignore
+  debug: window["env"]["debug"] || true
 };

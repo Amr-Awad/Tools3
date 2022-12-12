@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 import { HttpClient } from '@angular/common/http';
 import { catchError, Observable, tap, throwError } from 'rxjs';
 import { IStation } from "./station";
+import { environment } from "src/environments/environment";
 
 @Injectable(
     {
@@ -9,7 +10,7 @@ import { IStation } from "./station";
     })
 export class ViewStationsService {
     constructor(private http: HttpClient) { }
-    private _url: string = "http://localhost:8080/admin/getallstations";
+    private _url: string = "http://localhost:"+environment.backendport+"/admin/getallstations";
 
     getTrips(): Observable<IStation[]> {
         return this.http.get<IStation[]>(this._url).pipe(

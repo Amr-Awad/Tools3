@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IUser } from './user';
 import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-login',
@@ -13,8 +14,8 @@ export class LoginComponent {
   user: IUser = { username: '', password: '' };
   currentUser: IUser = { username: '', password: '' };
   sub: any;
-  private _signupUrl: string = "http://localhost:8080/admin/signup";
-  private _signinUrl: string = "http://localhost:8080/admin/signin";
+  private _signupUrl: string = "http://localhost:"+environment.backendport+"/admin/signup";
+  private _signinUrl: string = "http://localhost:"+environment.backendport+"/admin/signin";
   allUsers: IUser[] = [];
   signedIn: boolean = false;
   signedUp: boolean = false;
