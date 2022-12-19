@@ -10,7 +10,7 @@ import { ITrip } from "../viewTrips/trip";
 
 export class DeleteTripService {
     constructor(private http: HttpClient) { }
-    private _url: string = "http://localhost:"+environment.backendport+"/admin/deletetrip";
+    private _url: string = "http://localhost:/admin/deletetrip";
 
     deleteTrip(id: string): Observable<ITrip> {
         const tripUrl = "" + this._url + "/" + id;

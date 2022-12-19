@@ -10,7 +10,7 @@ import { ITrip } from "../viewTrips/trip";
 
 export class UpdateTripService {
     constructor(private http: HttpClient) { }
-    private _url: string = "http://localhost:"+environment.backendport+"/admin/updatetrip";
+    private _url: string = "http://localhost:/admin/updatetrip";
 
     updateTrip(id: string, trip: ITrip): Observable<ITrip> {
         const tripUrl = "" + this._url + "/" + id;

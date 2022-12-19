@@ -14,8 +14,8 @@ export class LoginComponent {
   user: IUser = { username: '', password: '' };
   currentUser: IUser = { username: '', password: '' };
   sub: any;
-  private _signupUrl: string = "http://localhost:"+environment.backendport+"/admin/signup";
-  private _signinUrl: string = "http://localhost:"+environment.backendport+"/admin/signin";
+  private _signupUrl: string = "http://localhost:/admin/signup";
+  private _signinUrl: string = "http://localhost:/admin/signin";
   allUsers: IUser[] = [];
   signedIn: boolean = false;
   signedUp: boolean = false;

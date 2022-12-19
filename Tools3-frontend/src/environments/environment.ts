@@ -5,9 +5,9 @@
 export const environment = {
   production: false,
   //@ts-ignore
-  backendport: window["env"]["backendport"] || "default",
+  apiUrl: "http://backend-trip-scheduler.apps.eu410.prod.nextcle.com",
   //@ts-ignore
-  debug: window["env"]["debug"] || false
+  debug: true
 };
 
 /*

@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
     })
 export class ViewTripsService {
     constructor(private http: HttpClient) { }
-    private _url: string = "http://localhost:"+environment.backendport+"/admin/getalltrips";
+    private _url: string = "http://localhost:/admin/getalltrips";
 
     getTrips(): Observable<ITrip[]> {
         return this.http.get<ITrip[]>(this._url).pipe(
