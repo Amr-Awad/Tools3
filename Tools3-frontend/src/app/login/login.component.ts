@@ -14,8 +14,8 @@ export class LoginComponent {
   user: IUser = { username: '', password: '' };
   currentUser: IUser = { username: '', password: '' };
   sub: any;
-  private _signupUrl: string = "http://localhost:"+environment.backendport+"/admin/signup";
-  private _signinUrl: string = "http://localhost:"+environment.backendport+"/admin/signin";
+  private _signupUrl: string = "https://backend-tools.apps.eu410.prod.nextcle.com/admin/signup";
+  private _signinUrl: string = "https://backend-tools.apps.eu410.prod.nextcle.com/admin/signin";
   allUsers: IUser[] = [];
   signedIn: boolean = false;
   signedUp: boolean = false;

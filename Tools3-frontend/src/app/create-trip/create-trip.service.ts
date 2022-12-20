@@ -10,7 +10,7 @@ import { ITrip } from "../viewTrips/trip";
 
 export class CreateTripService {
     constructor(private http: HttpClient) { }
-    private _url: string = "http://localhost:"+environment.backendport+"/admin/createtrip";
+    private _url: string = "https://backend-tools.apps.eu410.prod.nextcle.com/admin/createtrip";
 
     createTrip(trip: ITrip): Observable<ITrip> {
         return this.http.post<ITrip>(this._url, trip);
