@@ -5,19 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="98dfac1f-50b5-4cfc-ab24-e401f3f8180c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tools3-frontend/src/app/create-trip/create-trip.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Tools3-frontend/src/app/create-trip/create-trip.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tools3-frontend/src/app/delete-trip/delete-trip.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Tools3-frontend/src/app/delete-trip/delete-trip.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Tools3-frontend/src/app/login/login.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Tools3-frontend/src/app/login/login.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tools3-frontend/src/app/update-trip/update-trip.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Tools3-frontend/src/app/update-trip/update-trip.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tools3-frontend/src/app/view-stations/view-staion.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Tools3-frontend/src/app/view-stations/view-staion.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Tools3-frontend/src/app/viewTrips/viewTrips.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Tools3-frontend/src/app/viewTrips/viewTrips.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/TripScheduling/database/Dockerfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/TripScheduling/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/TripScheduling/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/TripScheduling/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/TripScheduling/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -139,6 +131,12 @@
       <workItem from="1670064149841" duration="1351000" />
       <workItem from="1670067269308" duration="7158000" />
       <workItem from="1670079007524" duration="194000" />
+      <workItem from="1670356695267" duration="1885000" />
+      <workItem from="1670443597591" duration="58000" />
+      <workItem from="1671451602254" duration="57000" />
+      <workItem from="1671459096314" duration="6120000" />
+      <workItem from="1671539897821" duration="2856000" />
+      <workItem from="1671545015200" duration="4526000" />
     </task>
     <servers />
   </component>
